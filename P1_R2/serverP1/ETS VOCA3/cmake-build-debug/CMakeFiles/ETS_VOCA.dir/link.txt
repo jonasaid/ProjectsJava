@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\ETS_VOCA.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\ETS_VOCA.dir/objects.a @CMakeFiles\ETS_VOCA.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\ETS_VOCA.dir/objects.a -Wl,--no-whole-archive  -o ETS_VOCA.exe -Wl,--out-implib,libETS_VOCA.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ETS_VOCA.dir\linklibs.rsp

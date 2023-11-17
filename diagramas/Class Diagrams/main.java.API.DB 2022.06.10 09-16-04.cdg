@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.API.DB">
+  <ClassDiagramComponents>
+    <Class name="DB" package="API.DB" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="url" type="String" visibility="private" isStatic="true"/>
+        <Field name="username" type="String" visibility="private" isStatic="true"/>
+        <Field name="password" type="String" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="conecta" returnType="Connection" visibility="public" isStatic="true"/>
+        <Method name="desconecta" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Connection" name="con"/>
+        </Method>
+        <Method name="ejecuta" returnType="ResultSet" visibility="public">
+          <Argument type="String" name="sentencia"/>
+        </Method>
+        <Method name="ejecuta" returnType="int" visibility="public">
+          <Argument type="String" name="sentencia"/>
+          <Argument type="String" name="tipo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EcucionCirculoCRUD" package="API.DB" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="db" type="DB" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="inserta" returnType="void" visibility="public">
+          <Argument type="EcuacionCirculo" name="ec"/>
+        </Method>
+        <Method name="elimina" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="seleccionaEjercicio" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="seleccionaEjercicio" returnType="ResultSet" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="RadioYCirculoCRUD" package="API.DB" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="db" type="DB" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="inserta" returnType="void" visibility="public">
+          <Argument type="RadioYCirculo" name="rc"/>
+        </Method>
+        <Method name="elimina" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="seleccionaEjercicio" returnType="ResultSet" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="seleccionaEjercicio" returnType="ResultSet" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="db" source="API.DB.EcucionCirculoCRUD" target="API.DB.DB" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="db" source="API.DB.RadioYCirculoCRUD" target="API.DB.DB" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

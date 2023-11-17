@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/jona-/Documents/Jona/ETS VOCA/main.cpp
+iostream
+-
+stdlib.h
+-
+string.h
+-
+fstream
+-
+

@@ -1,0 +1,3 @@
+C:/Users/jona-/Documents/Jona/ETS VOCA/cmake-build-debug/CMakeFiles/ETS_VOCA.dir
+C:/Users/jona-/Documents/Jona/ETS VOCA/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jona-/Documents/Jona/ETS VOCA/cmake-build-debug/CMakeFiles/rebuild_cache.dir

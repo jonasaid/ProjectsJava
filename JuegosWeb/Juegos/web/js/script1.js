@@ -1,0 +1,4 @@
+function Saluda(){
+    alert("Cuidado");
+}
+

@@ -1,0 +1,19 @@
+body{
+    background-color: #057;
+}
+
+
+.caja{ 
+    position: absolute;
+    top:10px;
+    bottom: 0px;
+    right: 0px;
+    left: 200px; 
+}
+
+    
+.botones{
+    opacity: .8;
+}
+
+
